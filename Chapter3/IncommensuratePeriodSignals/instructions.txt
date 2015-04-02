@@ -1,0 +1,37 @@
+From: "Aulisa, Eugenio" <eugenio.aulisa@ttu.edu>
+Subject: New file
+Date: December 12, 2013 10:06:45 AM CST
+To: David Gilliam <dsgilliam@nts-online.net>
+
+Hi David
+
+here the tracking/disturbance rejection with incommensurate periods
+
+https://dl.dropboxusercontent.com/u/58656755/GenSignalFourierDec/C44/IncommensuratePeriodSignals.zip
+
+it works very-very well.
+
+All the signal decompositions are done in Matlab now.
+I clean all solutions to make it small.
+
+To get all solution just run
+study 1
+study 2
+study 3
+
+if you want to change some parameters then:
+
+change parameters
+run study1
+save the probes in G.txt
+run Get_G_Inverse from matlab (no arguments)
+load the file G_Inverse.txt in variable 1
+run study2
+save the probes in data.txt
+run Get_Gamma(kmax,nmax,lmax) from matlab (right it is Get_Gamma(20,3,4))
+load the fila Gamma.txt in variable2
+run study3
+Enjoy the results!
+
+Best
+Eugenio
